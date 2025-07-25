@@ -8,16 +8,54 @@
 </head>
 <body>
   <div class="background"></div>
-  <main class="content">
-    <img src="images/profile.jpg" alt="Profile" class="profile">
-    <section class="bio">
-      <h1>mscpatt</h1>
-      <p>· IT specialist</p>
-      <p>· Moderator of more channels</p>
-      <p>· exDota now CS player</p>
-      <p>· Business tg: <a href="https://t.me/prdrow">@prdrow</a></p>
-      <p>· Ad mail: <a href="mailto:drow.battle.2025@gmail.com">drow.battle.2025@gmail.com</a></p>
-    </section>
-  </main>
+  <header>
+    <h1>Добро пожаловать на mscpatt</h1>
+    <nav>
+      <a href="#bio">Биография</a>
+      <a href="#contact">Контакты</a>
+      <a href="#form">Написать</a>
+      <a href="#login">Личный кабинет</a>
+    </nav>
+  </header>
+
+  <section id="bio">
+    <h2>Биография</h2>
+    <img src="images/profile.jpg" alt="Профиль" class="profile-img"/>
+    <ul>
+      <li>· IT specialist</li>
+      <li>· Moderator of more channels</li>
+      <li>· exDota now CS player</li>
+      <li>· Business tg: <a href="https://t.me/prdrow">@prdrow</a></li>
+      <li>· Ad mail: <a href="mailto:drow.battle.2025@gmail.com">drow.battle.2025@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:drow.battle.2025@gmail.com">drow.battle.2025@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/mscpat">@mscpat</a></p>
+  </section>
+
+  <section id="form">
+    <h2>Написать</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required><br>
+      <input type="email" placeholder="Ваш email" required><br>
+      <textarea placeholder="Сообщение" required></textarea><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Личный кабинет</h2>
+    <form onsubmit="return login();">
+      <input type="text" id="username" placeholder="Логин" required><br>
+      <input type="password" id="password" placeholder="Пароль" required><br>
+      <button type="submit">Войти</button>
+    </form>
+    <p id="login-status"></p>
+  </section>
+
+  <script src="js/auth.js"></script>
 </body>
 </html>
