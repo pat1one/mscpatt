@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f1a url('img/neon_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #0ff;
+  font-family: 'Orbitron', monospace, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px #0ff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #0ff;
+}
+
+nav a {
+  color: #0ff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0ff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  background: rgba(0, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+  color: #0ff;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: 'Orbitron', monospace, sans-serif;
+  font-size: 1rem;
+  resize: none;
+}
+
+button {
+  background: #0ff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px #0ff;
+  font-size: 0.9rem;
+  color: #0ff;
+}
