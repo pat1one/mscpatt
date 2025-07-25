@@ -1,1 +1,10 @@
-
+mscpatt/
+├── index.html
+├── gallery.html
+├── contact.html
+├── style.css
+└── img/
+    ├── neon_bg.jpg
+    ├── photo1.jpg
+    ├── photo2.jpg
+    └── photo3.jpg
