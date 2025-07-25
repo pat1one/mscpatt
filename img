@@ -3,8 +3,6 @@ mscpatt/
 ├── gallery.html
 ├── contact.html
 ├── style.css
-└── img/
-    ├── neon_bg.jpg
-    ├── photo1.jpg
-    ├── photo2.jpg
-    └── photo3.jpg
+└── img/<img src="https://picsum.photos/id/1015/600/400" />
+
+   
